@@ -1,5 +1,5 @@
-# before_install:
-#   - chmod +x mvnw
+before_install:
+  - chmod +x mvnw
 language: java
 jdk:
   - oraclejdk8
@@ -19,7 +19,7 @@ dist: trusty
 # - mysql -u root -e "CREATE USER 'springuser'@'localhost' IDENTIFIED BY 'ThePassword';"
 # - mysql -u root -e "GRANT ALL ON oneatalks.* TO 'springuser'@'localhost';"
 
-# script: mvn clean verify
+script: mvn clean verify
 # after_success:
   # - bash <(curl -s https://codecov.io/bash)
 notifications:
