@@ -1,4 +1,4 @@
-package com.onea.grademytt.model.service;
+package com.onea.grademytt.service;
 
 import com.onea.grademytt.model.Presentation;
 import org.springframework.stereotype.Service;
@@ -7,6 +7,7 @@ import java.util.List;
 
 @Service
 public class MainService {
+
 
     public List<Presentation> getPresentation() throws Exception {
         try {

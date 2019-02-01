@@ -1,4 +1,4 @@
-package com.onea.grademytt.controllers;
+package com.onea.grademytt.controller;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Controller;
