@@ -11,32 +11,39 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.test.context.junit4.SpringRunner;
-import java.util.Date;
+
 import java.util.List;
 
 @RunWith(SpringRunner.class)
 @DataJpaTest
 @AutoConfigureTestDatabase(replace = AutoConfigureTestDatabase.Replace.NONE)
-public class PresentationPersistenceTests {
+public class ScorePersistenceTests {
 
     @Autowired
     private PresentationRepository presentationRepository;
 
+    @Autowired
+    private ScoreRepository scoreRepository;
 
     @Test
     public void testSave() {
-        Presentation presentation = new Presentation();
-        presentation.setTitle("Test Presentation");
-        presentation.setPresentedDate(new Date());
-        presentation.setPresenter("egarcia");
-        presentation.setIntro("This is a test presentation, please ignore it");
-        presentationRepository.saveAndFlush(presentation);
 
-        List<Presentation> presentations = presentationRepository.findAll();
+        Scorer scorer = new Scorer();
+        scorer.setPresentationId(1);
+        scorer.setScorer("lbalderrama");
 
-        for(Presentation presentation1: presentations){
-            System.out.println(presentation1);
+        Score score = new Score();
+        score.setScorer(scorer);
+        score.setScore(3);
+
+        scoreRepository.saveAndFlush(score);
+
+        List<Score> scores = scoreRepository.findAll();
+
+        for(Score score1: scores){
+            System.out.println(score1);
         }
+
 
     }
 }
