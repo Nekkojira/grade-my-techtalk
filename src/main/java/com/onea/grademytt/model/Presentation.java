@@ -42,8 +42,7 @@ public class Presentation {
         this.intro = intro;
     }
 
-    @OneToMany(cascade = CascadeType.ALL)
-    @JoinColumn(name="presentation_id")
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<Score> scores;
 
     public Integer getId() {
@@ -103,7 +102,6 @@ public class Presentation {
                 ", title='" + title + '\'' +
                 ", presentedDate=" + presentedDate +
                 ", presenter='" + presenter + '\'' +
-                ", scores=" + scores +
                 '}';
     }
 }
