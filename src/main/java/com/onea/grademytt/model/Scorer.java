@@ -34,6 +34,10 @@ public class Scorer implements Serializable {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
+        else return isValid(o);
+    }
+
+    private boolean isValid(Object o) {
         Scorer scorer1 = (Scorer) o;
         return presentationId.equals(scorer1.presentationId) &&
                 scorer.equals(scorer1.scorer);
