@@ -1,5 +1,6 @@
 # Talks Rater
 Application developed to Rate the Monthly Tech Talks this is composed by features as a Login, Homepage, Presentation Creation page, Ratings page and a Presentation Details page
+[![Build Status](https://travis-ci.com/Nekkojira/grade-my-tt.svg?token=DgF395VC5hsDPPjm2od2&branch=master)](https://travis-ci.com/Nekkojira/grade-my-tt)
 
 
 ## Getting Started
