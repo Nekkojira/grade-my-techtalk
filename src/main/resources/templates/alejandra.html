@@ -1,0 +1,135 @@
+<div layout:decorator="layout/mainLayout">
+   <div layout:fragment="content" >
+      
+         <div class="ale-head">
+            <title>Alejandra</title>
+            <style>
+               .ale-header, .ale-footer{
+               background-color: #bdbdbd ;
+               border: solid 1px black;
+               font-family: 'Times New Roman' , serif;
+               font-size: 16px;
+               }
+               .ale-footer{
+               padding: 10px;
+               border-radius: 3px;
+               }
+               .ale-body{
+               font-family: Segoe UI, Arial, Helvetica, sans-serif;
+               font-size: 14px;	
+               background-color: #D8BFD8;
+               }
+               .bordered-img{
+               border:solid 1px #444;
+               border-radius: 20px;
+               }
+               a{
+               color: purple;
+               }
+               html, .ale-body{
+               padding: 0;
+               margin: 0;
+               }
+               #main {
+               border: 1px #ccc;
+               border-radius: 5px;
+               color: #202020;
+               margin: 20px 0px 20px 0px;
+               padding: 5px;
+               }
+               #results{
+               padding: 2px;
+               width: 600px;
+               display: inline-block;
+               vertical-align: top;
+               }
+               .simple-form{
+               padding: 2px;
+               width: 300px;
+               display: inline-block;
+               vertical-align: top;
+               }
+               .simple-form label{
+               font-weight: bold;
+               }
+               .simple-form input [type=text],
+               .simple-form select, 
+               .simple-form input [type=password],
+               .simple-form textarea{
+               width: 150px;
+               }
+               .simple-form input[type=submit]{
+               background-color: blue;
+               color: white;
+               border-radius: 15px;
+               padding: 3px;
+               margin-top: 5px;
+               }
+               .container{
+               width: 989px;
+               margin: 0 auto;
+               background-color: white;
+               padding: 5px;
+               }
+               .ale-header nav{
+               float :right;
+               margin-right: 10px;
+               }
+               .ale-header nav li {
+               display: inline;
+               }
+            </style>
+         </div>
+         <div class="ale-body">
+            <div class="container">
+               <div class="ale-header">
+                  <nav>
+                     <ul>
+                        <li><a href="/alejandra.html"><i>Home</i></a></li>
+                        <li><a href="/contactale.html"><i>Contact</i></a></li>
+                        <li><a href="/aboutale.html"><i>About</i></a></li>
+                        <li><a href="/index.html"><i>Fellas work</i></a></li>
+                     </ul>
+                  </nav>
+                  <div> <img src="http://www.mraristotle.com/data/media/Items/3597/10/mustanggrill.jpg" class="bordered-img"/> </div>
+                  <div>
+                     <h1>Practice</h1>
+                     <p>This is a site to show the new things i've learned in the past 10 months in 1A</p>
+                  </div>
+               </div>
+               <section id="main">
+                  <p>Do your <b>Best</b> </p>
+                  <p>In this <em>sample site </em> i'll show a list of <a href=""><b>Our</b></a> projects <span>and the data</span> about those projects. </p>
+                  <form action="" method="POST" class="bordered-img simple-form">
+                     <label for="searchPhrase"> Search Phrase:</label>
+                     <input name="searchPhrase" id="searchPhrase"/><br/>
+                     <label for="langChoice">Learned Topic </label>
+                     <select name="langChoice">
+                        <option>All</option>
+                        <option>Automated Testing</option>
+                        <option>Testing Bot</option>
+                        <option>Selenium</option>
+                        <option>Monetate</option>
+                        <option>Splunk</option>
+                        <option>HTML</option>
+                        <option>CSS</option>
+                        <option>JavaScript</option>
+                        <option>JQuery</option>
+                        <option>STS</option>
+                        
+                        <br/>
+                     </select>
+                     <input type="submit" value="Search"/>
+                  </form>
+                  <div id="results" class="bordered-img">
+                     This is where results will live ... eventually.
+                  </div>
+               </section>
+               <div class="ale-footer"> 
+                  &copy; 2017 Alejandra Morales Estrada
+               </div>
+            </div>
+         </div>
+     
+   </div>
+</div>
