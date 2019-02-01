@@ -1,4 +1,4 @@
-package com.grademytt;
+package com.onea.grademytt;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
