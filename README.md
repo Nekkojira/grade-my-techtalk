@@ -1,6 +1,7 @@
 # Grade My Tech-Talk
 [![Build Status](https://travis-ci.com/Nekkojira/grade-my-tt.svg?token=DgF395VC5hsDPPjm2od2&branch=master)](https://travis-ci.com/Nekkojira/grade-my-tt)
 [![codecov](https://codecov.io/gh/Nekkojira/grade-my-tt/branch/master/graph/badge.svg?token=A2pTsWu55w)](https://codecov.io/gh/Nekkojira/grade-my-tt)
+[![Maintainability](https://api.codeclimate.com/v1/badges/4cb6757a60e4ef1dbfc5/maintainability)](https://codeclimate.com/github/Nekkojira/grade-my-tt/maintainability)
 
 # Talks Rater
 Application developed to Rate the Monthly Tech Talks this is composed by features as a Login, Homepage, Presentation Creation page, Ratings page and a Presentation Details page
