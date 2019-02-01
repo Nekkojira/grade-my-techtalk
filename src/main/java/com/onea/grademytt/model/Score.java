@@ -32,6 +32,10 @@ public class Score {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
+        else return isValid(o);
+    }
+
+    private boolean isValid(Object o) {
         Score score1 = (Score) o;
         return scorer.equals(score1.scorer) &&
                 score.equals(score1.score);
